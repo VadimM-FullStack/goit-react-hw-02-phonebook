@@ -8,6 +8,7 @@ class ContactList extends Component {
     const { children, contacts, deleteContactHandler } = this.props;
     return (
       <section>
+        <h2>Contacts</h2>
         {children}
         {contacts.length ? (
           <ul className={styles["contact-list"]}>

@@ -63,12 +63,11 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <h1>Phonebook</h1>
           <ContactForm
             onFormSubmit={this.onFormSubmit}
             inputHandler={this.handleInputChange}
           />
-          <h2>Contacts</h2>
+
           <ContactList
             contacts={this.getFilteredContacts()}
             deleteContactHandler={this.deleteConact}

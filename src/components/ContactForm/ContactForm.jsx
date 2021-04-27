@@ -6,7 +6,7 @@ class ContactForm extends Component {
   render() {
     return (
       <section>
-        {" "}
+        <h1>Phonebook</h1>{" "}
         <form onSubmit={this.props.onFormSubmit}>
           <label className={styles["contact-label"]}>
             Name
@@ -32,8 +32,9 @@ class ContactForm extends Component {
               required
             />
           </label>
-
-          <button type="submit">Add contact</button>
+          <button className="btn-submit" type="submit">
+            Add contact
+          </button>
         </form>
       </section>
     );
