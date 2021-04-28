@@ -60,17 +60,15 @@ class ContactForm extends Component {
             className={styles["contact-input"]}
             type="tel"
             name="number"
-            placeholder="XXX-XX-XX"
             value={number}
+            placeholder="XXX-XX-XX"
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
             title="Номер телефона должен состоять цифр и может содержать пробелы, тире, круглые скобки и может начинаться с +"
             required
             onChange={this.handleChange}
           />
         </label>
-        <button type="submit" className={styles["btn-submit"]}>
-          Add contact
-        </button>
+        <button type="submit">Add contact</button>
       </form>
     );
   }
